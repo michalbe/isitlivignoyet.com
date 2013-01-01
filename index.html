@@ -7,9 +7,8 @@
 		<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
 		
 		<!-- CSS -->
-  	<link rel="stylesheet" href="css/reset.css">
+  	<link rel="stylesheet" href="css/county.css">
   	<link rel="stylesheet" href="fonts/stylesheet.css">
-  	<link rel="stylesheet" href="css/style.css">
 
   	<!--[if lt IE 9]>
   		<link rel="stylesheet" href="css/ie.css">
@@ -27,7 +26,7 @@
 		<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
 		
 		<!-- Countdown timer and other animations -->
-  	<script src="js/jquery.countdown.js"></script>
+  	<script src="js/county.js"></script>
   	
 		<script type="text/javascript" src="js/script.js"></script>
 			<style type="text/css">
@@ -44,14 +43,28 @@
   		    padding: 0;
   		  }
   		  
-  		  h1 {
-  		    width: 700px;
+  		  h1,
+  		  h4 {
+  		    width: 640px;
+  		    text-align: center;
         	height: 125px;
         	margin: 55px auto 0 auto;
   		    font-family: 'LeagueGothicRegular', Arial, Helvetica, sans-serif;
         	font-size: 120px;
         	color: #272727;
         	text-shadow: 2px 2px 0 #fff;
+  		  }
+  		  
+  		  h1 {
+  		    margin-top: 0px;
+  		    font-size: 150px;
+  		    height: 150px;
+  		  }
+  		  #count-down-refl,
+  		  #count-down {
+  		    width: 700px;
+        	height: 125px;
+        	margin: 55px auto 0 auto;
   		  }
     	</style>
 
@@ -61,8 +74,9 @@
     	<!--Demo styles (you can delete this block)-->
 
     	<div id="demo-block">
-    	  <h1>IS IT LIVIGNO YET?</h1>
-    		<div id="counter"></div>
+    	  <h4>IS IT LIVIGNO YET?</h4>
+    	  <h1 id="answer">NO.</h1>
+    		<div id="count-down"></div>
     	</div>
 
     	<!--End of styles-->

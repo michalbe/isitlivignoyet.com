@@ -1,3 +1,5 @@
+var LIVIGNO_DATE = '2014/04/15 00:00:00';
+
 var photos = 31;
 var slides = [];
 
@@ -68,9 +70,16 @@ jQuery(function($) {
     // Timer for each slide							
     mouse_scrub: 0
   });
+
+  if (((new Date(LIVIGNO_DATE)).getTime() - (new Date()).getTime()) < 0) {
+    $('#answer').html('YES.');
+  }
   
-	$('#counter').countdown({
-		timestamp : (new Date()).getTime() + 51*24*60*60*1000
-	});
-  
+  $('#count-down').county({
+    endDateTime: new Date(LIVIGNO_DATE),
+    reflection: false,
+    animation: 'scroll',
+    theme: 'black'
+  });
+
 });
