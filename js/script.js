@@ -22,7 +22,7 @@ jQuery(function($) {
     // Start slide (0 is random)
     stop_loop: 0,
     // Pauses slideshow on last slide
-    random: 0,
+    random: 1,
     // Randomize slide order (Ignores start slide)
     slide_interval: 3000,
     // Length between transitions
@@ -68,4 +68,9 @@ jQuery(function($) {
     // Timer for each slide							
     mouse_scrub: 0
   });
+  
+	$('#counter').countdown({
+		timestamp : (new Date()).getTime() + 51*24*60*60*1000
+	});
+  
 });

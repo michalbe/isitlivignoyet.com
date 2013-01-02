@@ -6,14 +6,32 @@
 		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
 		
+		<!-- CSS -->
+  	<link rel="stylesheet" href="css/reset.css">
+  	<link rel="stylesheet" href="fonts/stylesheet.css">
+  	<link rel="stylesheet" href="css/style.css">
+
+  	<!--[if lt IE 9]>
+  		<link rel="stylesheet" href="css/ie.css">
+  	<![endif]-->
+
+  	<!-- IE fix for HTML5 tags -->
+  	<!--[if lt IE 9]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
 		
 		<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
 		<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
+		
+		<!-- Countdown timer and other animations -->
+  	<script src="js/jquery.countdown.js"></script>
+  	
 		<script type="text/javascript" src="js/script.js"></script>
 			<style type="text/css">
-    		body {
+    		body, html {
     		  height: 100%;
     		  overflow: hidden;
     		}
@@ -24,8 +42,16 @@
   		    display:block;
   		    margin: 0;
   		    padding: 0;
-  		    background-color: white;
-  		    opacity: 0.2;
+  		  }
+  		  
+  		  h1 {
+  		    width: 700px;
+        	height: 125px;
+        	margin: 55px auto 0 auto;
+  		    font-family: 'LeagueGothicRegular', Arial, Helvetica, sans-serif;
+        	font-size: 120px;
+        	color: #272727;
+        	text-shadow: 2px 2px 0 #fff;
   		  }
     	</style>
 
@@ -35,7 +61,8 @@
     	<!--Demo styles (you can delete this block)-->
 
     	<div id="demo-block">
-    		Is it LIVIGNO yet?
+    	  <h1>IS IT LIVIGNO YET?</h1>
+    		<div id="counter"></div>
     	</div>
 
     	<!--End of styles-->
