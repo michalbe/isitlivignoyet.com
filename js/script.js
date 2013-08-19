@@ -1,6 +1,6 @@
 var LIVIGNO_DATE = '2014/04/15 00:00:00';
 
-var photos = 31;
+var photos = 30;
 var slides = [];
 
 while (photos--) {
