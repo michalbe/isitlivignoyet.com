@@ -1,4 +1,4 @@
-var LIVIGNO_DATE = '2014/04/15 00:00:00';
+var LIVIGNO_DATE = '2015/04/11 00:00:00';
 
 var photos = 30;
 var slides = [];
@@ -42,7 +42,7 @@ jQuery(function($) {
     // 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
     image_protect: 1,
     // Disables image dragging and right click with Javascript
-    // Size & Position						   
+    // Size & Position
     min_width: 0,
     // Min width allowed (in pixels)
     min_height: 0,
@@ -57,7 +57,7 @@ jQuery(function($) {
     // Portrait images will not exceed browser height
     fit_landscape: 1,
     // Landscape images will not exceed browser width
-    // Components							
+    // Components
     slide_links: 'blank',
     // Individual links for each slide (Options: false, 'num', 'name', 'blank')
     thumb_links: 0,
@@ -65,16 +65,16 @@ jQuery(function($) {
     thumbnail_navigation: 0,
     // Thumbnail navigation
     slides: slides,
-    // Theme Options			   
+    // Theme Options
     progress_bar: 0,
-    // Timer for each slide							
+    // Timer for each slide
     mouse_scrub: 0
   });
 
   if (((new Date(LIVIGNO_DATE)).getTime() - (new Date()).getTime()) < 0) {
     $('#answer').html('YES.');
   }
-  
+
   $('#count-down').county({
     endDateTime: new Date(LIVIGNO_DATE),
     reflection: false,
