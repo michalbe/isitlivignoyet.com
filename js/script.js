@@ -1,14 +1,13 @@
 var LIVIGNO_DATE = '2016/04/08 00:00:00';
 
+var maxPhotos = 30;
 var photos = 30;
 var slides = [];
 
 while (photos--) {
-  slides.push({
-    image: 'images/' + photos + '.jpg',
-    title: 'Is it Livigno yet?',
-    url: 'http://isitlivignoyet.com'
-  });
+  slides.push(
+    'images/' + photos + '.jpg'
+  );
 }
 
 jQuery(function($) {
@@ -22,5 +21,10 @@ jQuery(function($) {
     animation: 'scroll',
     theme: 'black'
   });
-
+  $("body").backgroundCycle({
+      imageUrls: slides,
+      fadeSpeed: 500,
+      duration: 4000,
+      backgroundSize: SCALING_MODE_COVER
+  });
 });
