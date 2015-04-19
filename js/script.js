@@ -1,4 +1,4 @@
-var LIVIGNO_DATE = '2015/04/11 00:00:00';
+var LIVIGNO_DATE = '2016/04/08 00:00:00';
 
 var photos = 30;
 var slides = [];
