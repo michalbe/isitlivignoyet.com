@@ -1,178 +1,157 @@
-﻿body, html
-{
-    font-size: 12px;
-}
-.county-reflection
-{
-    -moz-transform: scaleY(-1);
-    -webkit-transform: scaleY(-1);
-    -ms-transform: scaleY(-1);
-}
-.county
-{
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-}
-.county span.first
-{
-    padding-left: 12px;
-    border-radius: 4px 0px 0px 4px;
-    -webkit-border-radius: 4px 0px 0px 4px;
-    -moz-border-radius: 4px 0px 0px 4px;
-}
-.county span.last
-{
-    border-radius: 0px 4px 4px 0px;
-    -webkit-border-radius: 0px 4px 4px 0px;
-    -moz-border-radius: 0px 4px 4px 0px;
+.countdown {
+    display: table-cell;
+    font-weight: normal;
 }
 
-.county > span
-{
+.countdown .item {
     display: inline-block;
-    height: 48px;
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 72px;
+    vertical-align: bottom;
     position: relative;
+    font-family: 'Open Sans', cursive;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 100px;
+    text-align: center;
+    color: #B7B7B7;
+    border-radius: 10px;
+    margin: 50px 10px 50px 0;
+    padding: 0 10px;
+    background: #2A2A2A;
+    background: -webkit-linear-gradient(#2A2A2A, #000);
+    background: linear-gradient(#2A2A2A, #000);
     overflow: hidden;
-    padding-right: 12px;
 }
 
-.county-days-wrapper, .county-hours-wrapper, .county-minutes-wrapper, .county-seconds-wrapper
-{
-    overflow: hidden !important;
-    position: relative !important;
-    height: 72px !important;
-    display: inline-block !important;
-    padding-left: 12px;
-}
-.county > span > span
-{
+.countdown .item:after {
+    content: '';
     display: block;
+    height: 1px;
+    border-top: 3px solid #111;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
 }
-.county-label-days, .county-label-hours, .county-label-minutes, .county-label-seconds
-{
-    font-size: 12px !important;
-    line-height: 18px !important;
-    height: 18px !important;
-    text-align: center !important;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    padding-top: 12px;
-    background-color: transparent !important;
+.countdown .label {
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    font-family: 'Open Sans', cursive;
+    font-weight: 700;
+    line-height: normal;
+    right: 6px;
+    bottom: 4px;
+    font-size: 14px;
+    color: #B9B9B9;
 }
-
-.clear
-{
-    clear: both;
-}
-/*color schemes*/
-/*black*/
-.county.black .county-days-wrapper, .county.black .county-hours-wrapper, .county.black .county-minutes-wrapper, .county.black .county-seconds-wrapper
-{
-    background: #080808;
-    background: -moz-linear-gradient(top,  #080808 0%, #080808 40%, #000000 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#080808), color-stop(40%,#080808), color-stop(100%,#000000));
-    background: -webkit-linear-gradient(top,  #080808 0%,#080808 40%,#000000 100%);
-    background: -o-linear-gradient(top,  #080808 0%,#080808 40%,#000000 100%);
-    background: -ms-linear-gradient(top,  #080808 0%,#080808 40%,#000000 100%);
-    background: linear-gradient(to bottom,  #080808 0%,#080808 40%,#000000 100%);
-    color: White;
-    border-top: solid 1px #494949;
-    border-bottom: solid 1px #242424;
-}
-.county.black .county-label-days, .county.black .county-label-hours, .county.black .county-label-minutes, .county.black .county-label-seconds
-{
-    color: #ffffff;
-}
-.county.black span.separator-left
-{
-    border-left: solid 1px #2E2E2E;
-}
-.county.black span.separator-right
-{
-    border-right: solid 1px #121212;
+.countdown .item-hh .label,
+.countdown .item-mm .label,
+.countdown .item-ss .label {
+    display: none;
 }
 
-/*red*/
-.county.red
-{
-    background: #fff;    
+/* COUNTDOWN-ALT-1 */
+/* ----------------------------------------------------------------------------------------- */
+.countdown-alt-1 {
+    display: block;
+    font-size: 0;  /* Hack for inline and inline-block extra markup generated spaces */
+    margin: 100px 0;
+    color: #000;
 }
-.county.red .county-days-wrapper, .county.red .county-hours-wrapper, .county.red .county-minutes-wrapper, .county.red .county-seconds-wrapper
-{
-    background: #fff;
-    color: #e41f3a;
+.countdown-alt-1 .item {
+    position: relative;
 }
-.county.red .county-label-days, .county.red .county-label-hours, .county.red .county-label-minutes, .county.red .county-label-seconds
-{
-    color: #e41f3a;
+.countdown-alt-1 .dd,
+.countdown-alt-1 .hh-1,
+.countdown-alt-1 .hh-2,
+.countdown-alt-1 .mm-1,
+.countdown-alt-1 .mm-2,
+.countdown-alt-1 .ss-1,
+.countdown-alt-1 .ss-2 {
+    font-family: 'Righteous', cursive;
+    background: #F6F6F6;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 60px;
+    margin: 1px 2px;
+    min-width: 40px;
+    padding: 5px 16px;
+    text-align: center;
 }
-.county.red span.separator-left
-{
-    border-left: solid 1px #E0E0E0;
+.countdown-alt-1 .hh-1,
+.countdown-alt-1 .hh-2,
+.countdown-alt-1 .mm-1,
+.countdown-alt-1 .mm-2,
+.countdown-alt-1 .ss-1,
+.countdown-alt-1 .ss-2 {
+    width: 40px;
+    max-width: 40px;
 }
-.county.red span.separator-right
-{
-    border-right: solid 1px #E0E0E0;
+.countdown-alt-1 .label {
+    font-style: italic;
+    text-transform: capitalize;
+    background: #F6F6F6;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 1px 2px;
+    padding: 2px 5px;
+    position: absolute;
+    left: 0;
+    bottom: -44px;
 }
-
-/*gray*/
-
-.county.gray .county-days-wrapper, .county.gray .county-hours-wrapper, .county.gray .county-minutes-wrapper, .county.gray .county-seconds-wrapper
-{
-    color: Gray;
-    background: #E0E0E0;
-    background: -moz-linear-gradient(top,  #E0E0E0 0%, #E0E0E0 40%, #FAFAFA 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E0E0E0), color-stop(40%,#E0E0E0), color-stop(100%,#FAFAFA));
-    background: -webkit-linear-gradient(top,  #E0E0E0 0%,#E0E0E0 40%,#FAFAFA 100%);
-    background: -o-linear-gradient(top,  #E0E0E0 0%,#E0E0E0 40%,#FAFAFA 100%);
-    background: -ms-linear-gradient(top,  #E0E0E0 0%,#E0E0E0 40%,#FAFAFA 100%);
-    background: linear-gradient(to bottom,  #E0E0E0 0%,#E0E0E0 40%,#FAFAFA 100%);
-    border-top: solid 1px #FAFAFA;
-    border-bottom: solid 1px #FAFAFA;
-}
-.county.gray .county-label-days, .county.gray .county-label-hours, .county.gray .county-label-minutes, .county.gray .county-label-seconds
-{
-    color: Gray;
-}
-.county.gray span.separator-left
-{
-    border-left: solid 1px #FAFAFA;
-}
-.county.gray span.separator-right
-{
-    border-right: solid 1px #FAFAFA;
-}
-
-/*blue*/
-
-.county.blue .county-days-wrapper, .county.blue .county-hours-wrapper, .county.blue .county-minutes-wrapper, .county.blue .county-seconds-wrapper
-{
-    color: white;
-    background: #248AB2;
-    background: -moz-linear-gradient(top,  #248AB2 0%, #248AB2 40%, #50BCE6 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#248AB2), color-stop(40%,#248AB2), color-stop(100%,#50BCE6));
-    background: -webkit-linear-gradient(top,  #248AB2 0%,#248AB2 40%,#50BCE6 100%);
-    background: -o-linear-gradient(top,  #248AB2 0%,#248AB2 40%,#50BCE6 100%);
-    background: -ms-linear-gradient(top,  #248AB2 0%,#248AB2 40%,#50BCE6 100%);
-    background: linear-gradient(to bottom,  #248AB2 0%,#248AB2 40%,#50BCE6 100%);
-    border-top: solid 1px #50BCE6;
-    border-bottom: solid 1px #50BCE6;
-}
-.county.blue .county-label-days, .county.blue .county-label-hours, .county.blue .county-label-minutes, .county.blue .county-label-seconds
-{
-    color: #FFFFFF;
-}
-.county.blue span.separator-left
-{
-    border-left: solid 1px #50BCE6;
-}
-.county.blue span.separator-right
-{
-    border-right: solid 1px #50BCE6;
+.countdown-alt-1 .separator-dd,
+.countdown-alt-1 .separator {
+    color: #FFF;
+    font-size: 40px;
+    position: relative;
 }
 
+/* COUNTDOWN-ALT-2 - Inspiration http://goo.gl/hRfsc */
+/* ----------------------------------------------------------------------------------------- */
+.countdown-alt-2 {
+    font-size: 0;  /* Hack for inline and inline-block extra markup generated spaces */
+    display: block;
+    overflow: auto;
+    padding: 20px 0;
+    margin: 50px 0;
+    font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+    color: #333;
+    -webkit-transform: skew(-2deg, -2deg);
+    transform: skew(-2deg, -2deg);
+}
+.countdown-alt-2 .item {
+    display: block;
+    float: left;
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 36px 20px 10px 20px;
+    margin: 0 10px;
+    min-width: 100px;
+    max-width: 100px;
+    text-align: center;
+    background: #FFF;
+    border: 2px solid #FFF;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.countdown-alt-2 .dd,
+.countdown-alt-2 .hh-1,
+.countdown-alt-2 .hh-2,
+.countdown-alt-2 .mm-1,
+.countdown-alt-2 .mm-2,
+.countdown-alt-2 .ss-1,
+.countdown-alt-2 .ss-2 {
+    font: italic;
+    text-shadow: 1px 1px 10px #FFF, 1px 1px 3px #333;
+}
+.countdown-alt-2 .label {
+    font-weight: normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    width: 120px;
+    padding: 5px 10px;
+    background: #0B81BC;
+    color: #FFF;
+}
