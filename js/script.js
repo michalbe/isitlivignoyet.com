@@ -10,6 +10,10 @@ while (photos--) {
   );
 }
 
+slides.sort(function(){
+  return 0.5 - Math.random();
+});
+
 jQuery(function($) {
   if (((new Date(LIVIGNO_DATE)).getTime() - (new Date()).getTime()) < 0) {
     $('#answer').html('YES.');
