@@ -1,7 +1,7 @@
-var LIVIGNO_DATE = '2016/04/08 00:00:00';
+var LIVIGNO_DATE = '2016/04/08';
 
-var maxPhotos = 30;
-var photos = 30;
+var maxPhotos = 31;
+var photos = 31;
 var slides = [];
 
 while (photos--) {
@@ -15,12 +15,9 @@ jQuery(function($) {
     $('#answer').html('YES.');
   }
 
-  $('#count-down').county({
-    endDateTime: new Date(LIVIGNO_DATE),
-    reflection: false,
-    animation: 'scroll',
-    theme: 'black'
-  });
+
+  $('#count-down').html(LIVIGNO_DATE).countDown();
+
   $("body").backgroundCycle({
       imageUrls: slides,
       fadeSpeed: 500,
