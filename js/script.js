@@ -1,7 +1,7 @@
 var LIVIGNO_DATE = '2016/04/08';
 
-var maxPhotos = 31;
-var photos = 31;
+var maxPhotos = 30;
+var photos = 30;
 var slides = [];
 
 while (photos--) {
