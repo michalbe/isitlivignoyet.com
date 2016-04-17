@@ -14,12 +14,13 @@
     text-align: center;
     color: #B7B7B7;
     border-radius: 10px;
-    margin: 50px 10px 50px 0;
+    margin: 50px 5px 50px 5px;
     padding: 0 10px;
     background: #2A2A2A;
     background: -webkit-linear-gradient(#2A2A2A, #000);
     background: linear-gradient(#2A2A2A, #000);
     overflow: hidden;
+    vertical-align: middle;
 }
 
 .countdown .item:after {
