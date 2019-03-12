@@ -1,7 +1,7 @@
 var LIVIGNO_DATE = '2019/04/06';
 
-var maxPhotos = 30;
-var photos = 30;
+var maxPhotos = 16;
+var photos = 16;
 var slides = [];
 
 while (photos--) {
