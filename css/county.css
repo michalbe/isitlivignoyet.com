@@ -1,6 +1,7 @@
 .countdown {
-    display: table-cell;
+    display: block;
     font-weight: normal;
+    margin: auto;
 }
 
 .countdown .item {

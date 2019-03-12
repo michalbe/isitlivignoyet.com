@@ -1,4 +1,4 @@
-var LIVIGNO_DATE = '2017/04/08';
+var LIVIGNO_DATE = '2019/04/06';
 
 var maxPhotos = 30;
 var photos = 30;
